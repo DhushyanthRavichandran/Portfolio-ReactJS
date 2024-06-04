@@ -610,7 +610,7 @@ button{
 /* Mobile Viewport Styles */
 @media (max-width: 768px) {
   html, body {
-    /* overflow-x: hidden; */
+    overflow-x: hidden;
     margin: 0;
     padding: 0;
     /* width: 100%; */
@@ -653,19 +653,31 @@ button{
 
   .home-content {
     padding: 10px;
-    text-align: justify;
-    width: 70%;
+   
+    width: 90%;
     position: initial;
     text-align: center;
-
+    font-size: 13px;
+  }
+  .home-content p{
+    text-align: justify;
+    margin: 10px;
+  }
+  .home-button button{
+    padding: 10px;
   }
 
   .home-button {
     position: initial;
     display: flex;
-    width: 95%;
-    justify-content: center;
-    flex-direction: row;
+    width: 60%;
+    /* justify-content: center; */
+    /* flex-direction: row; */
+    align-items: center;
+    padding: 0px;
+  }
+  .home-button button{
+    font-size: 12px;
   }
   
   .highlighted-text{
@@ -686,6 +698,7 @@ button{
 
   .aboutme {
     text-align: center;
+    font-size: 40px;
   }
 
   .about-content {
@@ -699,13 +712,19 @@ button{
   }
   .small{
     margin-top: 0;
+    margin-bottom: 10px;
   }
   .smallintro{
     width: 70%;
     margin-top: 0;
     position:initial;
     margin: 30px;
-    justify-content: center
+    margin-bottom: 10px;
+    justify-content: center;
+    font-size: 12px;
+  }
+  .about{
+     width: 73%;
   }
   .About-details{
     display: flex;
