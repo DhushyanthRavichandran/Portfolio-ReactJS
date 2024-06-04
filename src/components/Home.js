@@ -1,12 +1,10 @@
 
-
-
 import React, { useEffect } from "react";
 import AOS from 'aos';
 import 'aos/dist/aos.css';
 
 export const Home = () => {
-
+  const el = React.useRef(null);
   const isDesktop = window.innerWidth >= 768; // example threshold for mobile screens
 
   useEffect(() => {
@@ -26,7 +24,7 @@ export const Home = () => {
   const Click=(url)=>{
     window.location.href=url;
   }
-
+  
   useEffect(() => {
     const emailButton = document.getElementById("emailButton");
     if (emailButton) {
@@ -61,10 +59,14 @@ export const Home = () => {
 
   return (
     <div id="home">
-      {/* <div className="container">
-        <span className="text first-text">Hi, I am </span>
-        <span className="text second-text"></span>
-      </div> */}
+      <div className="container">
+         <span className="text first-text">Hi, I am </span>
+         <span className="text second-text"></span>
+       </div>
+
+
+
+
       <div className="home-content">
         <p>
           Passionate web developer with a keen interest in machine learning and

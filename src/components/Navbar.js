@@ -1,46 +1,45 @@
-import React from 'react';
+import React, { useEffect, useState } from 'react';
 import AOS from 'aos';
 import 'aos/dist/aos.css';
+
 AOS.init();
+
 export const Navbar = () => {
+  const [showNavButtons, setShowNavButtons] = useState(false);
+
   const scrollToSection = (name) => {
-  
-    const element=document.getElementById(name);
-    if(element){
-      element.scrollIntoView({behavior:'smooth'})
+    const element = document.getElementById(name);
+    if (element) {
+      element.scrollIntoView({ behavior: 'smooth' });
+      setShowNavButtons(false); // Close the nav buttons after scrolling
     }
+  };
+
+  useEffect(() => {
+    AOS.init();
+  }, []);
+
+  const handleButtonClick = () => {
+    setShowNavButtons(!showNavButtons);
   };
 
   return (
     <div className='navbar'>
-      <div className='nav-name' data-aos="fade-right" data-aos-anchor-placement="top-center" data-aos-duration="1500">
-        <p style={{ fontSize: '24px' }}>&lt;Dhushyanth /&gt;</p>
+      <div className='nav-name'>
+      &lt;Dhushyanth /&gt;
       </div>
-      <div className='nav-buttons' data-aos="fade-left"  data-aos-duration="1500">
-
-        <button className='navbuttons' name='about' onClick={() => scrollToSection('about')}>
-          About </button>
-          <button className='navbuttons' name='home' onClick={() => scrollToSection('Tech')}>
-          Tech</button>
-        <button className='navbuttons' name='projects' 
-            onClick={() => scrollToSection('projects')}>
-              Projects</button>
-
-        <button
-          className='navbuttons' name='contact' onClick={() =>scrollToSection('contact')}>
-            Contact
-         </button>
-        <button className='nightmode' name='nightmode'>
-          <i className="fas fa-lightbulb"></i>
-        </button>
+      <div className={`nav-buttons ${showNavButtons ? 'show' : ''}`}>
+        <button className='nav-butt' onClick={() => scrollToSection('about')}>About</button>
+        <button className='nav-butt' onClick={() => scrollToSection('Tech')}>Tech</button>
+        <button className='nav-butt' onClick={() => scrollToSection('projects')}>Projects</button>
+        <button className='nav-butt' onClick={() => scrollToSection('contact')}>Contact</button>
+        <button className='nav-butt'><i className="fa-regular fa-lightbulb"></i></button>
+      </div>
+      <div className="nav-toggle" onClick={handleButtonClick}>
+        <i className={`fa ${showNavButtons ? 'fa-times' : 'fa-bars'}`}></i>
       </div>
     </div>
   );
 };
 
-      //   onClick={() =>
-      //     window.scroll({
-      //     top: 2100,
-      //     behavior: "smooth"
-      // })
-      //     }
+export default Navbar;
