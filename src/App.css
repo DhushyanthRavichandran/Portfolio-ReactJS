@@ -17,15 +17,6 @@ html, body {
 
 
 
-
-
-
-
-
-
-
-
-
 * {
   
   padding: 0;
@@ -625,7 +616,7 @@ button{
     /* width: 100%; */
     box-sizing: border-box;
 
-    width: 178%;
+    width: 100%;
   }
   #home{
     display: flex;
