@@ -1,23 +1,40 @@
-import logo from './logo.svg';
 import './App.css';
-
+import { Navbar } from './components/Navbar';
+import { Home } from './components/Home';
+import aboutData from './components/AboutData';
+import About from './components/About';
+import {SmallIntro} from './components/SmallIntro';
+import { TechToolsContainer } from './components/TechToolsContainer';
+import { Project } from './components/Project';
+import { Contact } from './components/Contact';
 function App() {
+   
+ const aboutdata=aboutData.map(item=>(
+    <About
+    key={item.id}
+    {...item}
+    />
+  )
+  );
+  
+
+
   return (
     <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+      <Navbar />
+      <Home /> 
+      <p  id="about" className='aboutme'>About  <span style={{color:"#74C0FC", }}>Me</span></p>
+      
+      <div className="About-details">
+      <SmallIntro />
+      
+      <div className='about-content'>
+      { aboutdata}
+      </div>
+      </div>
+      <TechToolsContainer/>
+      <Project/>
+       <Contact/>
     </div>
   );
 }
