@@ -316,6 +316,11 @@ html, body {
   
 }
 
+.about-year{
+  font-size: 20px;
+}
+
+
 /* Container styling */
 .container1 {
   overflow-x: hidden;
@@ -480,6 +485,9 @@ html, body {
 .project-description{
   margin-top: 0px;
 }
+  .view-button:hover{
+    color: #ffffff;
+  }
 .contact {
   margin: 0 ;
  text-align: center;
@@ -657,7 +665,7 @@ button{
     width: 90%;
     position: initial;
     text-align: center;
-    font-size: 13px;
+    font-size: 14px;
   }
   .home-content p{
     text-align: justify;
@@ -670,14 +678,14 @@ button{
   .home-button {
     position: initial;
     display: flex;
-    width: 60%;
+    width: 75%;
     /* justify-content: center; */
     /* flex-direction: row; */
     align-items: center;
     padding: 0px;
   }
   .home-button button{
-    font-size: 12px;
+    font-size: 13px;
   }
   
   .highlighted-text{
@@ -694,6 +702,12 @@ button{
     display: none;
     justify-content: center;
     margin-top: 20px;
+  }
+
+
+  .wrap1,.wrap2 {
+    margin-top: 0;
+    margin-bottom: -40px;
   }
 
   .aboutme {
@@ -721,7 +735,7 @@ button{
     margin: 30px;
     margin-bottom: 10px;
     justify-content: center;
-    font-size: 12px;
+    font-size: 14px;
   }
   .about{
      width: 73%;
@@ -744,20 +758,51 @@ button{
   .about-content{
     margin-top: 10px;
   }
+  .about-year{
+    font-size: 16px;
+    font-weight: 600;
+  }
+  .about-dept{
+    font-size: 15px;
+    font-weight: 500;
+  }
+  .about-clg{
+    font-size: 13px;
+    font-weight: 400;
+  }
+  
+  .about-desp{
+    font-size: 14px;
+  }
+  
+  .about-score{
+    font-size: 14px;
+    font-weight: 500;
+  }
+
+
   .Wrapper-design {
     display: flex;
     flex-wrap: wrap;
     justify-content: center;
+    margin-bottom: 0px;
   }
 
   .container1 {
-    width: 25%;
     margin: 0 auto;
     display: flex;
     flex-direction: column;
     align-items: center;
+    flex-wrap: nowrap;
   }
-
+  .proj{
+    margin:10px;
+    margin-top: 0px;
+    width: 80%;
+  }
+  .project-heading {
+    font-size: 40px;
+  }
   .project-page {
     text-align: center;
   }
@@ -766,63 +811,106 @@ button{
     display: flex;
     flex-direction: column;
     align-items: center;
+    margin: 0px;
+    width: 100%;
+  }
+  .project-title{
+    font-size: 20px;
+    color: #74C0FC;
+    font-weight: 400;
+  }
+  
+  .proj-boxes{
+    flex-wrap: wrap;
+    font-size: 15px;
+  }
+
+  .view-button {
+    position: initial;
+    font-size: 18px;
+    transition: 0.5s;
+  }
+  .view-button:hover{
+    color: #ffffff;
   }
 
   .project-content img {
-    width: 90%;
-  }
+    width: 80%;
+    height: auto;
+    margin: 0 auto;
+}
+
+
+
   .straightline{
 height: auto;
+display: none;
   }
   .project-description {
-    text-align: center;
-    padding: 10px;
+    text-align: justify;
+   
   }
 
   .contact-heading{
-    font-size: 80px;
+    font-size: 50px;
     text-align: center;
-  }
-  .contact {
-    padding: 10px;
   }
 
+  .contact-writeup {
+    display: flex;
+    width: 100%;
+    flex-direction: column;
+    align-items: center;
+}
   .contact-description {
-    text-align: center;
-    padding: 10px;
+    width: 80%;
+    font-size: 15px;
+    margin: 0px;
+    padding: 0px;
+    text-align: justify;
   }
 
   .contact-content {
     display: flex;
     flex-direction: column;
     align-items: center;
+    width: 95%;
   }
 
   .input-field {
-    width: 90%;
-    margin: 5px 0;
-  }
+    width: 85%;
+    margin: 18px 0;
+    padding: 10px;
+    font-size: 15px;
+}
 
   .end-page {
     display: flex;
     flex-direction: column;
     align-items: center;
-    padding: 10px;
+   
+    margin-top: 30px;
   }
 
   .column {
     width: 90%;
     text-align: center;
-    margin-bottom: 10px;
+    padding: 0;
   }
   .social-links {
     background-color: #0b1116;
     margin-top: 10px;
     display: flex;
-    justify-content: center;
+    justify-content: space-around;
+
 }
   .social-links a {
     display: block;
     margin: 5px 0;
+    color: #007bff;
+  
+  }
+  .column p{
+    font-size: 15px;
   }
 }

@@ -21,7 +21,7 @@ export const ContactContent = () => {
 
   return (
     <div className="contact-content">
-      <form ref={form} onSubmit={sendEmail}>
+      <form ref={form} style={{width: "80%",margin: "0 auto"}} onSubmit={sendEmail}>        
         <input type="text" name="from_name" className="input-field" placeholder="Name" required />
         <input type="email" name="to_name" className="input-field" placeholder="Email" required />
         <textarea name="message" className="input-field textarea" placeholder="Message" required></textarea>
@@ -30,3 +30,5 @@ export const ContactContent = () => {
     </div>
   );
 };
+
+

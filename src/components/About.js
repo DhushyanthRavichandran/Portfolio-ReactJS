@@ -15,10 +15,10 @@ import React, { useEffect } from "react";
       <div className='hello'  >
         <div data-aos={isDesktop?"fade-left":undefined}
                           data-aos-duration="1500" className='about t' >
-          <p style={{ margin:"0px 10px 0px 10px" ,color: "#74C0FC" ,paddingTop:"0",fontSize:"20px" ,fontWeight:"500"}}>{props.year}</p>
-          <p style={{margin:"0px 10px 0px 10px"  ,fontSize:"20px",paddingTop:"0" ,fontWeight:"500"}}>{props.dept} |  <span style={{fontSize:"18px" ,fontWeight:"300"}}>{props.school}</span></p>
-          <p style={{margin:"0px 10px 0px 10px"  ,paddingTop:"0",fontWeight:"400"}}> {props.description}</p>
-          <p style={{margin:"10px 10px 0px 10px" }}>Scored {props.Scored}</p>
+          <p className="about-year" style={{ margin:"0px 10px 0px 10px" ,color: "#74C0FC" ,paddingTop:"0"}}>{props.year}</p>
+          <p className="about-dept" style={{margin:"0px 10px 0px 10px"  ,paddingTop:"0" }}>{props.dept} |  <span  className="about-clg">{props.school}</span></p>
+          <p  className="about-desp"style={{margin:"0px 10px 0px 10px"  ,paddingTop:"0",}}> {props.description}</p>
+          <p  className="about-score"style={{margin:"10px 10px 0px 10px" }}>Scored {props.Scored}</p>
         </div>
       </div>
     );
