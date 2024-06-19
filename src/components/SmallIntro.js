@@ -12,7 +12,7 @@ export const SmallIntro = () => {
   }, [isDesktop]);
 
   return (
-    <div data-aos={isDesktop ? "fade-left" : undefined}
+    <div data-aos={isDesktop ? "fade-right" : undefined}
       data-aos-anchor-placement="top-center"
       data-aos-duration="1500"
       className='smallintro t'>
