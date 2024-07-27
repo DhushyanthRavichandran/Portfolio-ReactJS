@@ -136,7 +136,7 @@ export const Home = () => {
 
         
         <button
-         onClick={()=>{Click("https://drive.google.com/file/d/1l_wV4dMXeNrGmf3SLomBpyyVYs185D-b/view?usp=drive_link");
+         onClick={()=>{Click("https://drive.google.com/file/d/1_BIII2CE5mysIei3j-QeS-iunblWuaAC/view?usp=sharing");
           scrollToSection('contact')
           } 
         }
