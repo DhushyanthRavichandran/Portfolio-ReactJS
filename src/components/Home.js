@@ -4,7 +4,7 @@ import AOS from 'aos';
 import 'aos/dist/aos.css';
 
 export const Home = () => {
-  const el = React.useRef(null);
+ 
   const isDesktop = window.innerWidth >= 768; // example threshold for mobile screens
 
   useEffect(() => {

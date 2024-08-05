@@ -1,6 +1,6 @@
 import React, { useRef } from 'react';
 import emailjs from '@emailjs/browser';
-
+import 'react-toastify/dist/ReactToastify.css';
 export const ContactContent = () => {
   const form = useRef();
 
@@ -12,9 +12,11 @@ export const ContactContent = () => {
       .then(
         (result) => {
           console.log('SUCCESS!', result.text);
+          alert("Email sent successfully")
         },
         (error) => {
           console.log('FAILED...', error.text);
+          alert('FAILED...', error.text)
         },
       );
   };

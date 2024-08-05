@@ -6,6 +6,8 @@ import About from './components/About';
 import {SmallIntro} from './components/SmallIntro';
 import { TechToolsContainer } from './components/TechToolsContainer';
 import { Project } from './components/Project';
+import { ToastContainer } from 'react-toastify';
+
 import { Contact } from './components/Contact';
 function App() {
    
@@ -21,6 +23,7 @@ function App() {
 
   return (
     <div className="App">
+       <ToastContainer theme='dark' />
       <Navbar />
       <Home /> 
       <p  id="about" className='aboutme'>About  <span style={{color:"#74C0FC", }}>Me</span></p>
