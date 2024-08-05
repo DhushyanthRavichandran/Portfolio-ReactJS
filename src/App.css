@@ -299,9 +299,12 @@ html, body {
 }
 
 .about {  
-  display:inline-block; position:relative; z-index:1; width:90%; height:fit-content; margin:20px; padding:25px;
+  display:inline-block; position:relative; z-index:1;
+  height:fit-content;
+  margin:20px;
+  padding:25px;
   border-radius:20px;
-
+  width: 90%;
   box-shadow: -10px -10px 15px rgba(126, 124, 124, 0.12),
   10px 10px 15px rgba(0, 0, 0, 0.5);  
 }
@@ -340,7 +343,7 @@ html, body {
 }
 .container1 img {
   display: inline-block; 
-  max-width: 100%; 
+ 
   height: auto; 
 }
 .WrapperImage { 
@@ -349,7 +352,7 @@ html, body {
   width: 130px;
   padding: 10px;
   padding-bottom: 0;
-  border-radius: 30px;
+ 
   display: block;
   transition: opacity 0.3s;
 }
@@ -702,7 +705,11 @@ button{
     justify-content: center;
     margin-top: 20px;
   }
-
+  .txt {
+    font-weight: 300;
+    font-size: 0.8rem;
+    
+  }
   .wrap1,.wrap2 {
     margin-top: 0;
     margin-bottom: -40px;
@@ -736,9 +743,7 @@ button{
     font-size: 14px;
   }
   
-  .about{
-     width: 73%;
-  }
+
   
   .About-details{
     display: flex;
@@ -777,7 +782,9 @@ button{
   .about-desp{
     font-size: 14px;
   }
-  
+  .about{
+     width: 76%;
+  }
   .about-score{
     font-size: 14px;
     font-weight: 500;
@@ -790,6 +797,9 @@ button{
     margin-bottom: 0px;
   }
 
+  .WrapperImage {
+    width: 60px;
+    }
   .container1 {
     margin: 0 auto;
     display: flex;
