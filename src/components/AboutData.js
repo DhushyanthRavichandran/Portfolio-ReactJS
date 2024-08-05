@@ -4,7 +4,7 @@ const aboutData= [
         dept:'Electronics and Communication Engineering',
         school:'Kongu Engineering College',
         description:'Delving into the foundational aspects of the feild',
-        Scored:'CGPA: 7.66*'
+        Scored:'CGPA: 7.74*'
         
     },
 
