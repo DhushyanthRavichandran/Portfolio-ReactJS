@@ -34,7 +34,18 @@ const TechnologyData = [
       duration:3000,
       img: "/images/flask-removebg-preview.png",
       name: "Flask"
-    }
+    },
+    {
+      duration:3000,
+      img: "/images/mongo_img.png",
+      name: "Mongo DB"
+    },
+    {
+      duration:3000,
+      img: "/images/node_img.png",
+      name: "Node js"
+    },
+
   ];
   
   export default TechnologyData;
