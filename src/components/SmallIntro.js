@@ -17,7 +17,7 @@ export const SmallIntro = () => {
       data-aos-duration="1500"
       className='smallintro t'>
       <div className='small'>
-        Hey there! I'm a Third year Electronics and Communication Engineering student at Kongu Engineering College with a passion for IT. I've dived into projects ranging from machine learning and web development to some pretty cool electronics. Whether it's coding up a storm or tinkering with circuits, I'm always on the lookout for new things to learn and explore. I'm driven by curiosity and the joy of making things that can have a real impact. Let's create something awesome together!
+        Hey there! I'm a Final year Electronics and Communication Engineering student at Kongu Engineering College with a passion for IT. I've dived into projects ranging from machine learning and web development to some pretty cool electronics. Whether it's coding up a storm or tinkering with circuits, I'm always on the lookout for new things to learn and explore. I'm driven by curiosity and the joy of making things that can have a real impact. Let's create something awesome together!
       </div>
     </div>
   );
