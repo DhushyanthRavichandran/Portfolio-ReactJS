@@ -1,6 +1,16 @@
 const ProjectData=[
     {
         count:"0",
+        img:"/images/mainpage.png",
+        projectHeading:"E-Commerce Web App",
+        Year:"2024",
+        SoftUsed1:"Mern Stack",
+        ProjDespriction:"Built an Amazon clone with the MERN stack, Redux for state management, and Bootstrap for responsive design. Features include user login, product listings, order management.Developed an admin dashboard for managing products, orders, users, and reviews, with capabilities to update order statuses and user roles",
+        SoftUsed2:"Redux",
+        link:"https://github.com/DhushyanthRavichandran/NeuroPulse",
+    },
+    {
+        count:"1",
         img:"/images/neuropulse.png",
         projectHeading:"NeuroPulse-AI based Stroke identifier",
         Year:"2024",
@@ -10,7 +20,7 @@ const ProjectData=[
         link:"https://github.com/DhushyanthRavichandran/NeuroPulse",
     },
     {   
-        count:"1",
+        count:"0",
         img:"/images/smarklock.jpg",
         projectHeading:"Smark Door Lock",
         Year:"2024",
@@ -20,7 +30,7 @@ const ProjectData=[
         link:"https://github.com/DhushyanthRavichandran/consultancy-Project",
     },
     {
-        count:"0",
+        count:"1",
         img:"/images/portfolio.png",
         projectHeading:"Personal Portfolio",
         Year:"2024",
@@ -30,7 +40,7 @@ const ProjectData=[
         link:"https://github.com/DhushyanthRavichandran/Portfolio-ReactJS",
     },
     {
-        count:"1",
+        count:"0",
         img:"/images/wineclassifier.png",
         projectHeading:"Wine Classifier ",
         Year:"2023",

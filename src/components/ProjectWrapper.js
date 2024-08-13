@@ -69,45 +69,45 @@ export const ProjectWrapper = (props) => {
             ) : (
                 <>
                     <div 
-                        // data-aos={isDesktop ? "fade-right" : undefined} 
-                        // data-aos-duration="1500" 
+                        data-aos={isDesktop ? "fade-right" : undefined} 
+                        data-aos-duration="1500" 
                         className="proj">
                         <p className="project-title">{props.projectHeading}</p>
                         <p className="project-description">{props.ProjDespriction}</p>
                         <span className="proj-boxes">
                             <p 
-                                // data-aos={isDesktop ? "fade-up" : undefined} 
-                                // data-aos-duration="1100" 
+                                data-aos={isDesktop ? "fade-up" : undefined} 
+                                data-aos-duration="1100" 
                                 className="box">{props.Year}</p>
                             <p 
-                                // data-aos={isDesktop ? "fade-up" : undefined} 
-                                // data-aos-duration="1400" 
+                                data-aos={isDesktop ? "fade-up" : undefined} 
+                                data-aos-duration="1400" 
                                 className="box">{props.SoftUsed1}</p>
                             <p 
-                                // data-aos={isDesktop ? "fade-up" : undefined} 
-                                // data-aos-duration="1700" 
+                                data-aos={isDesktop ? "fade-up" : undefined} 
+                                data-aos-duration="1700" 
                                 className="box">{props.SoftUsed2}</p>
                         </span>
                         <button  
                             onClick={() => Click(props.link)} 
-                            // data-aos={isDesktop ? "fade-up" : undefined} 
-                            // data-aos-duration="2000" 
+                            data-aos={isDesktop ? "fade-up" : undefined} 
+                            data-aos-duration="2000" 
                             className="view-button">
                             VIEW WORK <i className="fa-solid fa-arrow-right"></i>
                         </button>
                     </div>
                     <div className="design">
                         <img 
-                            // data-aos={isDesktop ? "fade-up" : undefined} 
-                            // data-aos-anchor-placement={iAnchor ? "top-center": undefined} 
-                            // data-aos-duration="1200" 
+                            data-aos={isDesktop ? "fade-up" : undefined} 
+                            data-aos-anchor-placement={iAnchor ? "top-center": undefined} 
+                            data-aos-duration="1200" 
                             className="project-img" 
                             src={props.img} 
                             alt="projectImage" />
                         <div 
-                            // data-aos={isDesktop ? "fade-left" : undefined} 
-                            // data-aos-anchor-placement={iAnchor ? "top-center": undefined} 
-                            // data-aos-duration="1500"
+                            data-aos={isDesktop ? "fade-left" : undefined} 
+                            data-aos-anchor-placement={iAnchor ? "top-center": undefined} 
+                            data-aos-duration="1500"
                             className="straightline"
                             style={{
                                 background: 'linear-gradient(0deg, rgba(2,104,244,1) 0%, rgba(170,226,255,1) 100%)',
