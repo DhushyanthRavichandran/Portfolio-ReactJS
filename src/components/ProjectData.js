@@ -7,7 +7,7 @@ const ProjectData=[
         SoftUsed1:"Mern Stack",
         ProjDespriction:"Built an Amazon clone with the MERN stack, Redux for state management, and Bootstrap for responsive design. Features include user login, product listings, order management.Developed an admin dashboard for managing products, orders, users, and reviews, with capabilities to update order statuses and user roles",
         SoftUsed2:"Redux",
-        link:"https://github.com/DhushyanthRavichandran/NeuroPulse",
+        link:"https://github.com/DhushyanthRavichandran/Amazon",
     },
     {
         count:"1",
