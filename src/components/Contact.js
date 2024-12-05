@@ -22,7 +22,7 @@ export const Contact = () => {
                         <a href="https://www.linkedin.com/in/dhushyanth-ravichandran-798a52242/">LinkedIn</a> |
                         <a href="https://github.com/DhushyanthRavichandran">GitHub</a> |
                         <a href="https://www.instagram.com/dhushyanth_rocky_/">Instagram</a> |
-                        <a href="https://drive.google.com/file/d/1kB9LRg-HL2FBm5MY2smkUvpfjGuUyaDt/view?usp=drive_link">Resume</a>
+                        <a href="https://drive.google.com/file/d/1ICPnm3kluIPgs_yO3It23XHrxPaLe8E7/view?usp=drive_link">Resume</a>
                  </div> 
             </div>
             <div className="column">
