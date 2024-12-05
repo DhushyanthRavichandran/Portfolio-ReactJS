@@ -33,7 +33,7 @@ export const Navbar = () => {
         <button className='nav-butt' onClick={() => scrollToSection('Tech')}>Tech</button>
         <button className='nav-butt' onClick={() => scrollToSection('projects')}>Projects</button>
         <button className='nav-butt' onClick={() => scrollToSection('contact')}>Contact</button>
-        <button className='nav-butt'><i className="fa-regular fa-lightbulb"></i></button>
+        // <button className='nav-butt'><i className="fa-regular fa-lightbulb"></i></button>
       </div>
       <div className="nav-toggle" onClick={handleButtonClick}>
         <i className={`fa ${showNavButtons ? 'fa-times' : 'fa-bars'}`}></i>
